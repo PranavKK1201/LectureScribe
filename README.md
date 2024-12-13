@@ -4,33 +4,19 @@
 
 NotesDigitization is an innovative project designed to transform classroom learning by automatically capturing, digitizing, and summarizing lecture content. Our system leverages advanced technologies to convert classroom materials into comprehensive, structured notes.
 
-## Key Features
+## Demo Usage:
+### Video to Text
+![image](https://github.com/user-attachments/assets/80f4e378-df0e-4c12-9811-89bf21666e74)
+![image](https://github.com/user-attachments/assets/54854701-89dc-4638-89a8-bf0a826b9594)
 
-- **Automated Text Extraction**: 
-  - Utilizes Optical Character Recognition (OCR) technology
-  - Extracts text from handwritten boards and PowerPoint slides
-  - Reduces manual transcription efforts
+### Audio Transcript
+![image](https://github.com/user-attachments/assets/563d98d0-d6af-4fe5-b547-27820846a5b8)
 
-- **Multi-source Content Integration**:
-  - Combines text data from multiple sources
-  - Integrates handwritten notes and digital slides
-  - Creates well-structured, cohesive lecture notes
+### Transcript Augmentation with LLM
+![image](https://github.com/user-attachments/assets/ef823221-f818-49fe-afe9-c4c801b69b49)
 
-- **Advanced Text Recognition**:
-  - Implements machine learning models
-  - Enhances OCR accuracy
-  - Recognizes diverse handwriting styles and fonts
 
-- **Natural Language Processing (NLP) Enhancement**:
-  - Performs spell-checking
-  - Corrects grammar
-  - Provides contextual editing
 
-- **AI-Powered Summarization**:
-  - Uses Large Language Models (LLM)
-  - Extracts key points
-  - Highlights important topics
-  - Refines extracted text for better comprehension
 
 ## Technology Stack
 
@@ -80,13 +66,13 @@ NotesDigitization is an innovative project designed to transform classroom learn
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/NotesDigitization.git
+git clone https://github.com/PranavKK1201/NotesDigitization.git
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Run the application
-python main.py
+___.py
 ```
 
 ## Usage
