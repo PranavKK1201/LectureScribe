@@ -1,8 +1,8 @@
-# NotesDigitization: Automated Classroom Note Generation
+# LectureScribe: Automated Classroom Note Generation
 
 ## Project Overview
 
-NotesDigitization is an innovative project designed to transform classroom learning by automatically capturing, digitizing, and summarizing lecture content. Our system leverages advanced technologies to convert classroom materials into comprehensive, structured notes.
+LectureScribe is an innovative project designed to transform classroom learning by automatically capturing, digitizing, and summarizing lecture content. Our system leverages advanced technologies to convert classroom materials into comprehensive, structured notes.
 
 ## Demo Usage:
 ### Video to Text
