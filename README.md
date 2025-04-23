@@ -29,7 +29,7 @@ LectureScribe is an innovative project designed to transform classroom learning 
 ## Project Workflow
 
 1. **Video Capture**
-   - Capture classroom lecture video
+   - Capture classroom lecture video.
    - Extract frames at regular intervals (every 15 seconds)
 
 2. **Text Extraction**
