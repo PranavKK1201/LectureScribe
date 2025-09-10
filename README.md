@@ -15,11 +15,7 @@ LectureScribe is an innovative project designed to transform classroom learning 
 ### Transcript Augmentation with LLM
 ![image](https://github.com/user-attachments/assets/ef823221-f818-49fe-afe9-c4c801b69b49)
 
-
-
-
 ## Technology Stack
-
 - **Video Processing**: OpenCV
 - **OCR**: PaddleOCR
 - **Speech Recognition**: Google Speech Recognition
@@ -27,40 +23,22 @@ LectureScribe is an innovative project designed to transform classroom learning 
 - **Text Processing**: mT5, NLP techniques
 
 ## Project Workflow
-
-1. **Video Capture**
-   - Capture classroom lecture video.
-   - Extract frames at regular intervals (every 15 seconds)
-
-2. **Text Extraction**
-   - Pre-process video frames
-   - Apply grayscaling and thresholding
-   - Detect text contours
-   - Extract text using PaddleOCR
-
-3. **Audio Transcription**
-   - Convert audio to WAV format
-   - Create silence-based audio chunks
-   - Transcribe using Google Speech Recognition
-
-4. **Note Generation**
-   - Combine extracted video and audio texts
-   - Use prompt engineering
-   - Generate consolidated notes using Gemini API
+1.  **Video Capture**: The process begins by capturing the classroom lecture video. To ensure comprehensive coverage without overwhelming the system, frames are systematically extracted at a 15-second interval, capturing key moments and written content.
+2.  **Text Extraction**: Each extracted frame undergoes a series of pre-processing steps to optimize it for OCR. This includes applying **grayscaling** to simplify the image and **thresholding** to create a high-contrast binary image. The system then detects **text contours** to isolate text regions before using **PaddleOCR** to extract the written content.
+3.  **Audio Transcription**: The audio track from the video is converted to WAV format for processing. It is then segmented into **silence-based audio chunks** to improve the accuracy of transcription. Each chunk is individually processed by the **Google Speech Recognition** API to generate a time-aligned transcript.
+4.  **Note Generation**: The text extracted from video frames and the audio transcript are combined. Using carefully crafted **prompt engineering**, this consolidated text is passed to the **Gemini API**, which organizes the information, corrects errors, removes redundancies, and generates a final set of structured and easy-to-read notes.
 
 ## Research Objectives
-
-- Develop real-time classroom content digitization system
-- Implement AI-powered note summarization
-- Evaluate system effectiveness in enhancing student learning
-- Compare with existing solutions
+-   Develop a robust, real-time system capable of digitizing classroom content from both visual and auditory sources.
+-   Implement and refine an AI-powered note summarization engine to produce structured and contextually accurate study materials.
+-   Evaluate the system's effectiveness and impact on student learning engagement and academic performance through user studies.
+-   Benchmark the performance and features of LectureScribe against existing commercial and open-source note-taking solutions.
 
 ## Future Improvements
-
-- Speech-to-text conversion enhancement
-- Input stream synchronization
-- Subject-specific AI model training
-- Mobile app integration
+-   **Speech-to-Text Conversion Enhancement**: Investigate and integrate more advanced speech recognition models to improve transcription accuracy, particularly for specialized academic vocabulary.
+-   **Input Stream Synchronization**: Implement a precise, timestamp-based mechanism to perfectly align text extracted from video frames with the corresponding spoken transcript for greater contextual accuracy.
+-   **Subject-Specific AI Model Training**: Fine-tune AI models for specific academic subjects like mathematics or biology to better understand and format domain-specific notations, diagrams, and terminology.
+-   **Mobile App Integration**: Develop a dedicated mobile application for iOS and Android to allow users to record lectures, view generated notes, and study material on the go.
 
 ## Installation
 
@@ -75,22 +53,20 @@ pip install -r requirements.txt
 ___.py
 ```
 
-## Usage
 
-1. Upload classroom lecture video
-2. Select processing options
-3. Generate comprehensive notes
+## Usage
+1.  Launch the application and upload your classroom lecture video file.
+2.  Select the desired processing options for note generation.
+3.  Initiate the process and receive a comprehensive set of digital notes.
 
 ## Contributing
-
-Contributions are welcome! Please read our contributing guidelines before submitting pull requests.
+Contributions are always welcome! Please read our contributing guidelines to learn how you can help improve the project and feel free to submit a pull request.
 
 ## License
-
-MIT
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Acknowledgments
+-   This work is inspired by the foundational research on automated note generation by Kulkarni et al. (2023).
+-   A special thanks to the open-source community for developing the machine learning and educational technology tools that made this project possible.
 
-- Inspired by research from Kulkarni et al. (2023)
-- Thanks to the machine learning and education technology community
 
